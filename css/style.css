@@ -65,6 +65,9 @@ header ul{
     transition: transform .5s;
 }
 ul li{line-height: 45px;}
+header button{
+    display: none;
+}
 a{
     color: #000;
     text-decoration: none;
@@ -204,11 +207,19 @@ ul{
     header ul{
         position: inherit;
         display: block;
+        width: auto;
+        transform: translate(0px, 0px);
     }
     ul li {
         margin: 0px 14px;
         display: inline-block;
         text-align: start;
+    }
+    img[alt="show-list"] {
+        display: none;
+    }
+    header button{
+        display: block;
     }
     .container-page-1 {
         display: flex;
